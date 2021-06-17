@@ -22,7 +22,9 @@ import Button from "../../common/components/Button";
 const Glide = ({ slides }) => {
   const glideOptions = {
     type: "carousel",
-    autoplay: 3000,
+    autoplay: 2400,
+    animationDuration: 700,
+    animationTimingFunc: "cubic-bezier(0, 0, 0.58, 1)",
     perView: 1,
     gap: 0,
     hoverpause: false,
@@ -38,7 +40,7 @@ const Glide = ({ slides }) => {
     >
       {slides.map((slide) => (
         <GlideSlide key={slide.id}>
-          <Image src={slide.thumbUrl} alt="Charity Landing" />
+          <Image src={slide.thumbUrl} alt={slide.alt} />
         </GlideSlide>
       ))}
     </GlideCarousel>
@@ -90,16 +92,19 @@ const BannerSection = () => {
       <LeftBar text="SCROLL" offset={81} sectionId="#feature" />
       <ContentWrapper>
         <TextArea>
-          <Heading content="Μία συνδρομή για όλες τις δραστηριότητες" />
+          <Heading
+            as="h1"
+            content="Μια συνδρομή για όλες τις αθλητικές σου δραστηριότητες"
+          />
           <Heading
             as="h4"
-            content="Αποκτήστε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες. Επιλέξτε αυτό που σας ταιριάζει κάθε φορά χωρίς δεσμεύσεις ή περιορισμούς."
+            content="Απόκτησε πρόσβαση σε διαφορετικά προγράμματα, από γυμναστήρια και στούντιο γιόγκα μεχρι κολυμβητήρια και πολεμικές τέχνες. Επέλεξε αυτό που σου ταιριάζει κάθε φορά χωρίς δεσμεύσεις ή περιορισμούς."
           />
           {message !== "" ? (
             <Heading as="h3" content={message} />
           ) : (
             <>
-              <Text content="Εγγραφείτε τώρα και αποκτήστε έκπτωση στην πρώτη συνδρομή." />
+              <Text content="Κάνε εγγραφή τώρα και απόκτησε έκπτωση στην πρώτη σου συνδρομή." />
               <FormWrapper onSubmit={handleSubscriptionForm}>
                 <Input
                   ref={inputEl}
@@ -114,7 +119,7 @@ const BannerSection = () => {
                   aria-label="email"
                 />
 
-                <div style={{ margin: "8px 0" }} className="formError">
+                <div style={{ margin: "4px 0 8px 0 " }} className="formError">
                   {error.length ? (
                     <div>{error}</div>
                   ) : (
@@ -122,11 +127,7 @@ const BannerSection = () => {
                   )}
                 </div>
                 <ButtonGroup>
-                  <Button
-                    type="submit"
-                    colors="primaryWithBg"
-                    title="ΕΓΓΡΑΦΗ"
-                  />
+                  <Button type="submit" title="ΕΓΓΡΑΦΗ" variant="outlined" />
                 </ButtonGroup>
               </FormWrapper>
             </>

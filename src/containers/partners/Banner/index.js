@@ -3,7 +3,6 @@ import Link from "next/link";
 import Fade from "react-reveal/Fade";
 import { useRouter } from "next/router";
 import Heading from "../../../common/components/Heading";
-import Text from "../../../common/components/Text";
 import Image from "../../../common/components/Image";
 import Button from "../../../common/components/Button";
 import GlideCarousel from "../../../common/components/GlideCarousel";
@@ -21,10 +20,12 @@ import { bannerData } from "../../../common/data/partners";
 import { Item, List } from "../../BranchSectionLeft/branchSection.style";
 
 const Banner = () => {
-  const { lists, title, text, carousel } = bannerData;
+  const { lists, title, carousel } = bannerData;
   const glideOptions = {
     type: "carousel",
-    autoplay: 2500,
+    autoplay: 2400,
+    animationDuration: 700,
+    animationTimingFunc: "cubic-bezier(0, 0, 0.58, 1)",
     perView: 3,
     gap: 20,
     hoverpause: false,
@@ -53,7 +54,6 @@ const Banner = () => {
         <ContentArea>
           <Fade bottom delay={10}>
             <Heading as="h1" content={title} />
-            <Text content={text} />
             <List>
               {lists.map((item) => (
                 <Item type="light" key={`list_key${item.id}`}>
@@ -67,7 +67,7 @@ const Banner = () => {
                   router.push("/partners-contact-form");
                 }}
                 type="submit"
-                colors="primaryWithBg"
+                variant="outlinedLight"
                 title="ΣΥΜΠΛΗΡΩΣΤΕ ΤΗΝ ONLINE ΦΟΡΜΑ"
               />
             </ButtonGroup>
@@ -91,13 +91,13 @@ const Banner = () => {
                       <Link href={item.link}>
                         <a className="item_wrapper">
                           <Heading as="h4" content={item.title} />
-                          <Image src={item.thumbUrl} alt={item.title} />
+                          <Image src={item.thumbUrl} alt={item.alt} />
                         </a>
                       </Link>
                     ) : (
                       <span className="item_wrapper">
                         <Heading as="h4" content={item.title} />
-                        <Image src={item.thumbUrl} alt={item.title} />
+                        <Image src={item.thumbUrl} alt={item.alt} />
                       </span>
                     )}
                   </GlideSlide>

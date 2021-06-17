@@ -20,14 +20,20 @@ const Partners = () => (
   <ThemeProvider theme={charityTheme}>
     <Page
       description="Έχετε στούντιο γυμναστικής ή χώρο άθλησης; Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή."
-      title="Πληρωθείτε για καθε check in στο χωρο σας - Urbanfit"
+      title="Πληρωθείτε για καθε check-in στο χωρο σας - Urbanfit Athens"
+      keywords="Urbanfit Athens, Athina, Αθήνα, check-in, Yoga, Γυμναστήριο, προσφορά, φθηνά γυμναστήρια"
       image="/images/banner-0.jpeg"
     >
       <GlobalStyle />
 
       <CharityWrapper>
         <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-          <Navbar type="dark" />
+          {(status) => {
+            if (status.status === Sticky.STATUS_FIXED) {
+              return <Navbar light={false} />;
+            }
+            return <Navbar light />;
+          }}
         </Sticky>
         <ContentWrapper>
           <Banner />

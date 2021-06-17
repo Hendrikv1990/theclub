@@ -1,14 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 
 const NavbarWrapper = styled.nav`
-  ${(props) =>
-    props.type === "dark" &&
-    css`
-      background: black;
-    `}
   .container {
-    padding: 0 200px;
+    padding: 0 200px 0 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,12 +55,14 @@ export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50px;
+  border-radius: 20px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   color: ${themeGet("colors.heading", "#060F1E")};
-  background-color: ${themeGet("colors.primary", "#fff535")};
+  background-color: ${themeGet("colors.white")};
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px,
+    rgb(0 0 0 / 30%) 0px 1px 3px -1px;
   transition: all 0.3s ease;
   @media only screen and (max-width: 1440px) {
     font-size: 15px;
@@ -75,7 +72,9 @@ export const Button = styled.button`
   }
 
   &:hover {
-    background-color: ${themeGet("colors.primaryHover", "#ECF22F")};
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background: ${themeGet("colors.primary", "#060F1E")};
   }
 
   img {
@@ -88,7 +87,6 @@ export const Button = styled.button`
   &:hover,
   &:focus {
     content: 0;
-    box-shadow: none;
   }
 `;
 

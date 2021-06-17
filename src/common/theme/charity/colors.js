@@ -1,18 +1,20 @@
 const colors = {
   transparent: "transparent",
-  lightGray: "#F0F0F0",
-  primary: "#fff535",
-  primaryHover: "#f2e643",
-  primary2: "rgba(252, 242, 43, 0.25)",
-  secondary: "#D50032",
-  secondary2: "#EE2541",
-  secondaryHover: "#FF282F",
+  bannerBackground: "#f5fbff",
+  lightGray: "#f7fcff",
+  primary: "#ECFF6B",
+  primaryLight: "#f1fe9c",
+  primaryHover: "#D7F31B",
+  secondary: "#021210",
+  label: "#021210",
+  backgroundDark: "#072329",
   yellow: "#fdb32a",
   yellowHover: "#F29E02",
   border: "#dadada",
   black: "#000000",
   white: "#ffffff",
-  heading: "#060F1E",
+  heading: "#001e29",
+  headingLight: "#003044",
   text: "#294859",
   secondaryText: "#616970",
   lightText: "rgba(41, 72, 89, 0.5)",
@@ -21,6 +23,9 @@ const colors = {
   twitter: "#38A1F3",
   github: "#211f1f",
   select: "#525F7F",
+  error: "#ff2f4d",
+  linearBackground:
+    "linear-gradient(90deg, rgba(0,21,29,1) 9%, rgba(0,45,55,1) 75%)",
 };
 
 export default colors;

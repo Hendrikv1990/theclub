@@ -50,18 +50,6 @@ import happyKids from "../assets/image/charity/section-corporate.jpeg";
 /* ------------------------------------ */
 // Blog post data
 /* ------------------------------------ */
-import thumb1 from "../assets/image/charity/blog/thumb-1.png";
-import thumb2 from "../assets/image/charity/blog/thumb-2.png";
-
-/* ------------------------------------ */
-// Client block data
-/* ------------------------------------ */
-import windows from "../assets/image/charity/clients/1.png";
-import airbnb from "../assets/image/charity/clients/2.png";
-import adidas from "../assets/image/charity/clients/3.png";
-import ibm from "../assets/image/charity/clients/4.png";
-import amazon from "../assets/image/charity/clients/5.png";
-import google from "../assets/image/charity/clients/6.png";
 
 export const menuItems = [
   {
@@ -80,7 +68,7 @@ export const menuItems = [
     offset: "81",
   },
   {
-    label: "Πακέτα για επιχειρήσεις",
+    label: "Πακέτα για επιχηρήσεις",
     path: "#corporate",
     offset: "81",
   },
@@ -95,45 +83,54 @@ export const bannerSlides = [
   {
     id: 0,
     thumbUrl: bannerSlide0,
+    alt: "Γυμναστήρια με μια συνδρομή",
   },
   {
     id: 4,
     thumbUrl: bannerSlide1,
+    alt: "Κολυμβητήρια με μια συνδρομή",
   },
   {
     id: 1,
     thumbUrl: bannerSlide5,
+    alt: "cross training με μια συνδρομή",
   },
   {
     id: 2,
     thumbUrl: bannerSlide4,
+    alt: "Yoga class με μια συνδρομή",
   },
   {
     id: 10,
     thumbUrl: bannerSlide10,
+    alt: "cross training με μια συνδρομή",
   },
   {
     id: 3,
     thumbUrl: bannerSlide2,
+    alt: "Γυμναστήρια αναρρίχησης με μια συνδρομή",
   },
   {
     id: 5,
     thumbUrl: bannerSlide3,
+    alt: "Kick boxing με μια συνδρομή",
   },
   {
     id: 7,
     thumbUrl: bannerSlide7,
+    alt: "Pilates με μια συνδρομή",
   },
   {
     id: 9,
     thumbUrl: bannerSlide9,
+    alt: "Μαθηματα χορού με μια συνδρομή",
   },
 ];
 
 export const featureData = {
   title: "Πρόσβαση σε κάθε δραστηριότητα, χωρίς περιορισμούς",
   slogan:
-    "Απολαύστε εκατοντάδες αθλητικές δραστηριότητες καθώς και ζωντανά μαθήματα με την πιο ευέλικτη αθλητική προσφορά στην Ελλάδα!",
+    "Απόλαυσε εκατοντάδες αθλητικές δραστηριότητες καθώς και ζωντανά μαθήματα με την πιο ευέλικτη αθλητική προσφορά στην Ελλάδα!",
   features: [
     {
       id: 1,
@@ -159,14 +156,14 @@ export const featureData = {
     {
       id: 3,
       icon: featureIcon3,
-      title: "Υποστηρίξτε τα στούντιο της περιοχής σας",
+      title: "Υποστήριξε τα στούντιο της περιοχής σου",
       description:
-        "Ανακαλύψτε εξειδικευμένα στούντιο στην περιοχή σας και υποστηρίξτε τις τοπικές αθλητικές εγκαταστάσεις και τους εκπαιδευτές τους.",
+        "Ανακαλύψτε εξειδικευμένα στούντιο στην περιοχή σας και υποστηρίξτε τις τοπικες αθλητικές εγκαταστάσεις και τους εκπαιδευτές τους.",
     },
     {
       id: 5,
       icon: featureIcon5,
-      title: "Εύκολα, από το κινητό σου",
+      title: "Εύκολα, από την Urbanfit εφαρμογή στο κινητό σου",
       description:
         "Βρείτε όλες τις πληροφορίες για τα αγαπημένα σας γυμναστήρια και κάντε την κράτησή σας χωρίς επιπρόσθετες εγγραφές και συνδέσεις.",
     },
@@ -186,23 +183,23 @@ export const workData = {
     {
       id: 1,
       icon: search,
-      title: "1. Ανακαλύψτε νέα studio",
+      title: "1. Ανακάλυψε νέα studio",
       description:
-        "Από τη γιόγκα στο crossfit, από το bouldering έως το high-intensity training, περιηγηθείτε στις αγαπημένες σας δραστηριότητες.",
+        "Από τη γιόγκα στο crossfit, από το bouldering στο high-intensity training. Ψάξτε και βρείτε τι ταιριάζει σε εσάς από μια μεγάλη ποικιλία δραστηριοτήτων.",
     },
     {
       id: 2,
       icon: booking,
-      title: "2. Κάντε κράτηση",
+      title: "2. Κάνε κράτηση",
       description:
-        "Με διάφορες δραστηριότητες από εξειδικευμένους χώρους συνεργατών, είστε βέβαιοι ότι θα βρείτε την τέλεια δραστηριότητα για εσάς.",
+        "Αφού βρείτε τη δραστηριότητα που θέλετε να κάνετε σήμερα, κλείστε θέση μέσω της εφαρμογής Urbanfit! Είναι τόσο εύκολο.",
     },
     {
       id: 3,
       icon: checkIn,
-      title: "3. Check in",
+      title: "3. Γυμνάσου",
       description:
-        "Ήρθε η ώρα να ξεκινήσετε! Χρησιμοποιήστε την εφαρμογή σας για να κάνετε check-in και απολάυστε τη γυμναστική σας!",
+        "Ήρθε η ώρα να απολάυστε τη γυμναστική σας! Επισκεφτείτε το στουντιο που επιλέξατε και χρησιμοποιήστε την Urbanfit εφαρμογή για να κάνετε check-in.",
     },
   ],
 };
@@ -210,8 +207,8 @@ export const workData = {
 export const branchData = {
   id: 1,
   image: thumbImage1,
-  slogan: "ΣΥΝΕΡΓΑΖΟΜΑΣΤΕ ΓΙΑ ΤΗΝ ΕΠΙΤΥΧΙΑ",
-  textTitle: `Γίνε  <strong>συνεργάτης</strong>!`,
+  slogan: "ΠΑΚΕΤΑ ΓΙΑ ΓΥΜΝΑΣΤΗΡΙΑ & ΣΤΟΥΝΤΙΟ",
+  textTitle: `Γίνε συνεργάτης!`,
   description:
     "Η επιτυχία μας συνδέεται άμεσα με την επιτυχία των συνεργατών μας. Διαφημίστε δωρεάν την επιχείρησή σας μέσω του δικτύου μας και αυξήστε την αναγνωρισιμότητα και την προβολή της επιχείρησής σας.\n",
   lists: [
@@ -237,14 +234,14 @@ export const branchData = {
     },
   ],
   linkUrl: "/partners",
-  linkText: "Μάθετε περισσότερα",
+  linkText: "Γίνε Συνεργάτης",
 };
 
 export const branchRightData = {
   id: 1,
   image: thumbImage2,
-  slogan: "ΠΡΟΓΡΑΜΜΑΤΑ ΕΤΑΙΡΙΚΗΣ ΕΥΕΞΙΑΣ - COMING SOON",
-  textTitle: `Χαρίστε στους υπαλλήλους σας φυσική <strong>κατάσταση</strong> και <strong>ευεξία</strong>!`,
+  slogan: "ΠΡΟΓΡΑΜΜΑΤΑ ΚΑΙ ΕΤΑΙΡΙΚΑ ΠΑΚΕΤΑ ΓΙΑ ΥΠΑΛΛΗΛΟΥΣ - COMING SOON",
+  textTitle: `Χαρίστε στους υπαλλήλους σας καλύτερη φυσική κατάσταση και ευεξία!`,
   description:
     "Τώρα είναι η τέλεια στιγμή για να επενδύσετε στους υπαλλήλους σας.",
   lists: [
@@ -336,67 +333,6 @@ export const currencyOptions = [
   },
 ];
 
-export const posts = [
-  {
-    id: 1,
-    title: "Uganda Embraces South Sudanese Refugees, For Now",
-    excerpt:
-      "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-    thumbUrl: thumb1,
-    btnText: "Learn More ",
-    btnUrl: "#1",
-  },
-  {
-    id: 2,
-    title: "BRITs Week 2019 together with O2 is here",
-    excerpt:
-      "72 million children around the world are not enrolled in school. Concern Worldwide focuses on providing basic education to those…",
-    thumbUrl: thumb2,
-    btnText: "Learn More ",
-    btnUrl: "#1",
-  },
-];
-
-export const clients = [
-  {
-    id: 1,
-    logo: windows,
-    name: "windows",
-    link: "#1",
-  },
-  {
-    id: 2,
-    logo: airbnb,
-    name: "airbnb",
-    link: "#2",
-  },
-  {
-    id: 3,
-    logo: adidas,
-    name: "adidas",
-    link: "#3",
-  },
-  {
-    id: 4,
-    logo: ibm,
-    name: "ibm",
-    link: "#4",
-  },
-  {
-    id: 5,
-    logo: amazon,
-    name: "amazon",
-    link: "#5",
-  },
-  {
-    id: 6,
-    logo: google,
-    name: "google",
-    link: "#6",
-  },
-];
-
-/* ------------------------------------ */
 // Footer data section
 /* ------------------------------------ */
 export const menuWidgets = [
@@ -491,8 +427,8 @@ export const socialLinks = [
 ];
 
 export const faq = {
-  slogan: "Συχνες Ερωτησεις Μελων",
-  title: "Μπορείτε να μας καλέσετε στο 6988221619",
+  slogan: "Συχνές Ερωτήσεις Μελών Urbanfit",
+  title: "Μπορείτε να μας καλέσετε στο +306988221619",
   faqs: [
     {
       id: 1,
@@ -504,7 +440,7 @@ export const faq = {
       id: 2,
       question: "Πώς μπορώ να κάνω κράτηση και να επισκεφτώ χώρους;",
       answer:
-        "Μπορείτε να βρείτε τη γκάμα αθλητικών δραστηριοτήτων απευθείας στην εφαρμογή μας. Όταν φτάσετε σε ένα χώρο, μπορείτε να κάνετε check in σαρώνοντας τον κωδικό QR Urbanfit που συνήθως βρίσκεται κοντά στην είσοδο. Ορισμένες δραστηριότητες ενδέχεται να απαιτούν κράτηση.",
+        "Μπορείτε να βρείτε τη γκάμα αθλητικών δραστηριοτήτων απευθείας στην εφαρμογή μας. Όταν φτάσετε σε ένα χώρο, μπορείτε να κάνετε check-in σαρώνοντας τον κωδικό QR Urbanfit που συνήθως βρίσκεται κοντά στην είσοδο. Ορισμένες δραστηριότητες ενδέχεται να απαιτούν κράτηση.",
     },
     {
       id: 3,
@@ -515,9 +451,9 @@ export const faq = {
     },
     {
       id: 4,
-      question: "Τι χρειάζομαι στο προφίλ μου για να μπορώ να κάνω check in;",
+      question: "Τι χρειάζομαι στο προφίλ μου για να μπορώ να κάνω check-in;",
       answer:
-        "Πριν χρησιμοποιήσετε τη συνδρομή σας για πρώτη φορά, βεβαιωθείτε ότι έχετε συνδεθεί επιτυχώς στην εφαρμογή χρησιμοποιώντας τον κωδικό πρόσβασης και τη διεύθυνση ηλεκτρονικού ταχυδρομείου με το οποία έχετε εγγραφεί. Για να μπορέσετε να κάνετε check in, πρέπει να ανεβάσετε μια εικόνα προφίλ, ώστε να μπορείτε να αναγνωριστείτε στο στούντιο ή τη γυμναστηριακή μονάδα. Για να ανεβάσετε φωτογραφία μπορείτε να χρησιμοποιήσετε την εφαρμογή στο κινήτο σας. Βεβαιωθείτε ότι έχετε σύνδεση στο Διαδίκτυο και ότι έχετε δώσει στην εφαρμογή πρόσβαση στην κάμερα. Μόλις το κάνετε αυτό, τότε δεν θα έχετε κανένα πρόβλημα να κάνετε check in στην τοποθεσία που διαλέξατε να προπονηθείτε.",
+        "Πριν χρησιμοποιήσετε τη συνδρομή σας για πρώτη φορά, βεβαιωθείτε ότι έχετε συνδεθεί επιτυχώς στην εφαρμογή χρησιμοποιώντας τον κωδικό πρόσβασης και τη διεύθυνση ηλεκτρονικού ταχυδρομείου με το οποία έχετε εγγραφεί. Για να μπορέσετε να κάνετε check-in, πρέπει να ανεβάσετε μια εικόνα προφίλ, ώστε να μπορείτε να αναγνωριστείτε στο στούντιο ή τη γυμναστηριακή μονάδα. Για να ανεβάσετε φωτογραφία μπορείτε να χρησιμοποιήσετε την εφαρμογή στο κινήτο σας. Βεβαιωθείτε ότι έχετε σύνδεση στο Διαδίκτυο και ότι έχετε δώσει στην εφαρμογή πρόσβαση στην κάμερα. Μόλις το κάνετε αυτό, τότε δεν θα έχετε κανένα πρόβλημα να κάνετε check-in στην τοποθεσία που διαλέξατε να προπονηθείτε.",
     },
     {
       id: 6,
@@ -527,7 +463,7 @@ export const faq = {
     },
     {
       id: 7,
-      question: "Πρέπει να κάνω κράτηση πριν μπορώ να κάνω check in;",
+      question: "Πρέπει να κάνω κράτηση πριν μπορώ να κάνω check-in;",
       answer:
         "Μπορείτε να δείτε εάν πρέπει να κάνετε κράτηση και πώς να το κάνετε ελέγχοντας το προφίλ του συνεργάτη στην εφαρμογή σας. Για να κλείσετε μια τάξη, βεβαιωθείτε ότι έχετε συνδεθεί στην εφαρμογή σας. \n" +
         "\n" +

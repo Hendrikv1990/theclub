@@ -17,15 +17,7 @@
 /* ------------------------------------ */
 // Menu data
 /* ------------------------------------ */
-/* ------------------------------------ */
-// Banner section data
-/* ------------------------------------ */
 import { Icon } from "react-icons-kit";
-import { socialFacebook } from "react-icons-kit/ionicons/socialFacebook";
-import { socialDribbble } from "react-icons-kit/ionicons/socialDribbble";
-import { socialGoogleplus } from "react-icons-kit/ionicons/socialGoogleplus";
-import { socialSkype } from "react-icons-kit/ionicons/socialSkype";
-import { socialTwitter } from "react-icons-kit/ionicons/socialTwitter";
 import { facebook } from "react-icons-kit/fa/facebook";
 import { dribbble } from "react-icons-kit/fa/dribbble";
 import { googlePlus } from "react-icons-kit/fa/googlePlus";
@@ -39,6 +31,7 @@ import slide5 from "../../../../public/images/partners-banner-5.jpeg";
 import slide6 from "../../../../public/images/partners-banner-6.jpeg";
 import slide7 from "../../../../public/images/partners-banner-7.jpeg";
 import slide8 from "../../../../public/images/partners-banner-8.jpeg";
+import slide9 from "../../../../public/images/partners-banner-9.jpeg";
 
 /* ------------------------------------ */
 // Feature section data
@@ -53,19 +46,6 @@ import icon5 from "../../assets/image/partners/feature/svg-5.svg";
 // About section data
 /* ------------------------------------ */
 import product from "../../assets/image/partners/win.jpeg";
-
-/* ------------------------------------ */
-// Projects section data
-/* ------------------------------------ */
-import project1 from "../../assets/image/partners/projects/1.png";
-
-/* ------------------------------------ */
-// Team section data
-/* ------------------------------------ */
-
-import member1 from "../../assets/image/partners/team/member1.jpg";
-import member2 from "../../assets/image/partners/team/member2.jpg";
-import member3 from "../../assets/image/partners/team/member3.jpg";
 
 /* ------------------------------------ */
 // Gallery data
@@ -120,50 +100,68 @@ export const bannerData = {
     {
       id: 0,
       text:
-        // todo
-        "Έχετε στούντιο γυμναστικής ή χώρο άθλησης; Γίνετε μέλος του δικτύου μας και αναδείξτε τον χώρο και τις υπηρεσίες σας. \nΕπεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή σε μεγαλύτερο κοινό. Και όλα αυτά χωρίς προκαταβολές ή επιπλέον χρεώσεις.",
+        "Έχετε στούντιο γυμναστικής ή χώρο άθλησης; Γίνετε μέλος του δικτύου μας και αναδείξτε τον χώρο και τις υπηρεσίες σας.",
+    },
+    {
+      id: 1,
+      text:
+        "Επεκτείνετε το πελατολόγιό σας χωρίς οικονομικές δεσμεύσεις και κάντε την επιχείρησή σας γνωστή σε μεγαλύτερο κοινό. Και όλα αυτά χωρίς προκαταβολές ή επιπλέον χρεώσεις.",
     },
   ],
   carousel: [
     {
       id: 1,
       thumbUrl: slide1,
-      title: "Yoga",
+      title: "Studio Yoga",
+      alt: "Studio Yoga είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 5,
       thumbUrl: slide5,
-      title: "Studios",
+      title: "Open gym",
+      alt: "Open gyms είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 8,
       thumbUrl: slide8,
       title: "Γυμναστήρια",
+      alt: "Γυμναστήρια είναι συνεργάτες της Urbanfit Athens",
+    },
+    {
+      id: 9,
+      thumbUrl: slide9,
+      title: "Χορός",
+      alt: "Τάξεις χορού είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 2,
       thumbUrl: slide2,
       title: "Boxing",
+      alt: "Boxing studios είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 3,
       thumbUrl: slide3,
-      title: "Lift",
+      title: "Crossfit",
+      alt: "Crossfit studios είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 7,
       thumbUrl: slide7,
       title: "Yoga",
+      alt: "Yoga είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 6,
       thumbUrl: slide6,
       title: "Crossfit",
+      alt: "Crossfit είναι συνεργάτες της Urbanfit Athens",
     },
     {
       id: 4,
       thumbUrl: slide4,
       title: "Γυμναστήρια",
+      alt: "Γυμναστήρια  είναι συνεργάτες της Urbanfit Athens",
     },
   ],
 };
@@ -222,141 +220,6 @@ export const aboutData = {
     "Δηλώστε τα διαθέσιμα προγράμματα γυμναστικής και τις ώρες λειτουργίας τους που θα είναι διαθέσιμα στο δίκτυο μας. Αξιοποιήστε την εφαρμογή μας για να δείτε την απόδοσή και τα κέρδη σας.",
   title3: "3. Πληρωθείτε για κάθε check-in!",
   text3: "Υποδεχτείτε τους πελάτες και πληρωθείτε για την κάθε επίσκεψη.",
-};
-
-export const projectData = {
-  title: "WORK PROCEDURE",
-  slogan: "How We Do Our Projects",
-  thumbUrl: project1,
-  projects: [
-    {
-      id: 1,
-      text:
-        "Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.",
-      text2:
-        "When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
-    },
-    {
-      id: 2,
-      text:
-        "Schedule a brainstorming session in a quiet place with few distractions. If you are working on a project alone, you can use group discussions with friends or colleagues to gain a new perspective on the topic. When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
-      text2:
-        "Completing a successful project requires a significant amount of time and work, which means evaluating your priorities and planning your course of action.",
-    },
-    {
-      id: 3,
-      text:
-        "Create a mind map to brainstorm your project to inspire new ideas. Use a simple piece of paper, poster, or whiteboard for your mind map and we write the destination of your project in the middle.We  Write down related topics, subtopics, and relevant concepts around the goal and branch from them to create and follow different tangents.",
-      text2:
-        "When you conduct a group project, each group member can benefit from the ideas of others and gain new insights by brainstorming together.",
-    },
-  ],
-};
-
-export const teamData = {
-  title: "OUR TEAM MEMBER",
-  slogan: "Meet Our Perfectionist",
-  members: [
-    {
-      id: 1,
-      avatar: member1,
-      name: "Roman Ul Oman",
-      designation: "Project Manager",
-      social_links: [
-        {
-          id: 1,
-          icon: <Icon icon={socialFacebook} />,
-          url: "#1",
-        },
-        {
-          id: 2,
-          icon: <Icon icon={socialDribbble} />,
-          url: "#1",
-        },
-        {
-          id: 3,
-          icon: <Icon icon={socialGoogleplus} />,
-          url: "#1",
-        },
-        {
-          id: 4,
-          icon: <Icon icon={socialSkype} />,
-          url: "#1",
-        },
-        {
-          id: 5,
-          icon: <Icon icon={socialTwitter} />,
-          url: "#1",
-        },
-      ],
-    },
-    {
-      id: 2,
-      avatar: member2,
-      name: "Jeny Doe",
-      designation: "Lead Designer",
-      social_links: [
-        {
-          id: 1,
-          icon: <Icon icon={socialFacebook} />,
-          url: "#1",
-        },
-        {
-          id: 2,
-          icon: <Icon icon={socialDribbble} />,
-          url: "#1",
-        },
-        {
-          id: 3,
-          icon: <Icon icon={socialGoogleplus} />,
-          url: "#1",
-        },
-        {
-          id: 4,
-          icon: <Icon icon={socialSkype} />,
-          url: "#1",
-        },
-        {
-          id: 5,
-          icon: <Icon icon={socialTwitter} />,
-          url: "#1",
-        },
-      ],
-    },
-    {
-      id: 3,
-      avatar: member3,
-      name: "Naina Cooper",
-      designation: "Marketing Manager",
-      social_links: [
-        {
-          id: 1,
-          icon: <Icon icon={socialFacebook} />,
-          url: "#1",
-        },
-        {
-          id: 2,
-          icon: <Icon icon={socialDribbble} />,
-          url: "#1",
-        },
-        {
-          id: 3,
-          icon: <Icon icon={socialGoogleplus} />,
-          url: "#1",
-        },
-        {
-          id: 4,
-          icon: <Icon icon={socialSkype} />,
-          url: "#1",
-        },
-        {
-          id: 5,
-          icon: <Icon icon={socialTwitter} />,
-          url: "#1",
-        },
-      ],
-    },
-  ],
 };
 
 /* ------------------------------------ */
@@ -694,8 +557,8 @@ export const socialProfile = [
 ];
 
 export const faq = {
-  slogan: "Συχνες Ερωτησεις συνεργατων",
-  title: "Μπορείτε να μας καλέσετε στο 6988221619",
+  slogan: "Συχνές Ερωτήσεις Συνεργατών Urbanfit",
+  title: "Μπορείτε να μας καλέσετε στο +306988221619",
   faqs: [
     {
       id: 9,
@@ -714,7 +577,7 @@ export const faq = {
       id: 2,
       question: "Πώς λειτουργεί το check στην Urbanfit;",
       answer:
-        "Η διαδικασία check in είναι εύκολη και πραγματοποιείται μέσω της εφαρμογής Urbanfit, την οποία κάθε μέλος έχει εγκαταστήσει εκ των προτέρων στο κινητό τους. Τα μέλη μας πηγαίνουν στον επιθυμητό συνεργάτη (γυμναστήριο, στούντιο yoga κτλπ), σαρώσουν τον κωδικό QR που βρήσκετε κόντα στην είσοδο του χώρου και μπορούν να ξεκινήσουν αμέσως. Εάν η κράτηση είναι απαραίτητη εκ των προτέρων (περιορισμένος αριθμός συμμετεχόντων για μαθήματα, ομαδικά αθλήματα ή επιθυμητό ατομικό ραντεβού), τα μέλη θα ενημερωθούν για αυτό κατά την προεγγραφή μέσω την εφαρμογής μας.",
+        "Η διαδικασία check-in είναι εύκολη και πραγματοποιείται μέσω της εφαρμογής Urbanfit, την οποία κάθε μέλος έχει εγκαταστήσει εκ των προτέρων στο κινητό τους. Τα μέλη μας πηγαίνουν στον επιθυμητό συνεργάτη (γυμναστήριο, στούντιο yoga κτλπ), σαρώσουν τον κωδικό QR που βρήσκετε κόντα στην είσοδο του χώρου και μπορούν να ξεκινήσουν αμέσως. Εάν η κράτηση είναι απαραίτητη εκ των προτέρων (περιορισμένος αριθμός συμμετεχόντων για μαθήματα, ομαδικά αθλήματα ή επιθυμητό ατομικό ραντεβού), τα μέλη θα ενημερωθούν για αυτό κατά την προεγγραφή μέσω την εφαρμογής μας.",
     },
     {
       id: 3,
@@ -733,9 +596,9 @@ export const faq = {
     {
       id: 6,
       question:
-        "Πώς πρέπει να συμπεριφέρομαι όταν ένα μέλος του Urbanfit μου δείχνει ένα μήνυμα σφάλματος κατά τη διαδικασία του check in;",
+        "Πώς πρέπει να συμπεριφέρομαι όταν ένα μέλος του Urbanfit μου δείχνει ένα μήνυμα σφάλματος κατά τη διαδικασία του check-in;",
       answer:
-        "Ένα μήνυμα σφάλματος σημαίνει ότι δεν επιτρέπεται η αποδοχή και η επίσκεψη δεν θα αντισταθμιστεί από το Urbanfit. Τα μηνύματα σφάλματος έχουν συνήθως έναν καλό λόγο (έληξε η ιδιότητα μέλους, εξαντλημένο όριο επισκέψεων κ.λπ.). \nΜερικές φορές ένα ίσως το μέλος να μην έχει καλο σήμα δικτύου, οπότε σε ορισμένες περιπτώσεις, εάν δεν υπάρχει προφανής λόγος για το μήνυμα σφάλματος, βοηθάει να εκτελέσετε τη διαδικασία check in για δεύτερη φορά. \nΕάν εξακολουθεί να μην είναι δυνατή η είσοδος στο check in, δεν επιτρέπεται η αποδοχή. Το Urbanfit δεν επιστρέφει αυτές τις επισκέψεις. Εάν το μέλος εξακολουθεί να θέλει να εκπαιδεύσει μαζί σας, μπορείτε να χρεώσετε την επίσκεψη σε αυτήν την περίπτωση απευθείας με το μέλος σχετικά με τις κανονικές σας συνθήκες. Το μέλος μπορεί στη συνέχεια να επικοινωνήσει με την υποστήριξη των μελών μας.",
+        "Ένα μήνυμα σφάλματος σημαίνει ότι δεν επιτρέπεται η αποδοχή και η επίσκεψη δεν θα αντισταθμιστεί από το Urbanfit. Τα μηνύματα σφάλματος έχουν συνήθως έναν καλό λόγο (έληξε η ιδιότητα μέλους, εξαντλημένο όριο επισκέψεων κ.λπ.). \nΜερικές φορές ένα ίσως το μέλος να μην έχει καλο σήμα δικτύου, οπότε σε ορισμένες περιπτώσεις, εάν δεν υπάρχει προφανής λόγος για το μήνυμα σφάλματος, βοηθάει να εκτελέσετε τη διαδικασία check-in για δεύτερη φορά. \nΕάν εξακολουθεί να μην είναι δυνατή η είσοδος στο check-in, δεν επιτρέπεται η αποδοχή. Το Urbanfit δεν επιστρέφει αυτές τις επισκέψεις. Εάν το μέλος εξακολουθεί να θέλει να εκπαιδεύσει μαζί σας, μπορείτε να χρεώσετε την επίσκεψη σε αυτήν την περίπτωση απευθείας με το μέλος σχετικά με τις κανονικές σας συνθήκες. Το μέλος μπορεί στη συνέχεια να επικοινωνήσει με την υποστήριξη των μελών μας.",
     },
     {
       id: 7,

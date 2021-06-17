@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import patter1 from "../../common/assets/image/charity/branch/highlight-pattern.svg";
 import patter2 from "../../common/assets/image/charity/branch/highlight-pattern2.svg";
+import colors from "../../common/theme/charity/colors";
 
 const SectionWrapper = styled.section`
   width: 100%;
@@ -163,7 +164,12 @@ export const ContentWrapper = styled.div`
   .content {
     width: 750px;
     padding: 80px 86px 77px;
-    background-color: ${themeGet("colors.primary", "#fff535")};
+    background: linear-gradient(
+      90deg,
+      ${colors.primary} 15%,
+      ${colors.primaryLight} 100%
+    );
+
     @media only screen and (max-width: 1440px) {
       width: 5600px;
       padding: 70px 65px;
@@ -227,11 +233,12 @@ export const ContentWrapper = styled.div`
       }
     }
 
-    p {
+    p,
+    li {
       font-size: 18px;
       line-height: 30px;
       margin-bottom: 8px;
-      color: ${themeGet("colors.text", "#294859")};
+      color: ${themeGet("colors.secondary")};
       @media only screen and (max-width: 1440px) {
         font-size: 16px;
         margin-bottom: 8px;
@@ -242,11 +249,16 @@ export const ContentWrapper = styled.div`
       @media only screen and (max-width: 991px) {
         margin-bottom: 35px;
       }
+      @media only screen and (max-width: 768px) {
+        margin-bottom: 8px;
+      }
     }
 
     .learn__more-btn {
       &::before {
-        background-color: #fffccc;
+        background: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       }
     }
   }

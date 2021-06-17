@@ -35,8 +35,8 @@ export const charityTheme = {
       color: colors.secondary,
       borderColor: colors.secondary,
       "&:hover": {
-        color: colors.secondaryHover,
-        borderColor: colors.secondaryHover,
+        color: colors.primaryHover,
+        borderColor: colors.primaryHover,
       },
     },
     warning: {
@@ -48,8 +48,8 @@ export const charityTheme = {
       },
     },
     error: {
-      color: colors.secondaryHover,
-      borderColor: colors.secondaryHover,
+      color: colors.primaryHover,
+      borderColor: colors.primaryHover,
       "&:hover": {
         color: colors.secondary,
         borderColor: colors.secondary,
@@ -69,8 +69,8 @@ export const charityTheme = {
       backgroundColor: colors.secondary,
       borderColor: colors.secondary,
       "&:hover": {
-        backgroundColor: colors.secondaryHover,
-        borderColor: colors.secondaryHover,
+        backgroundColor: colors.primaryHover,
+        borderColor: colors.primaryHover,
       },
     },
     warningWithBg: {
@@ -84,8 +84,8 @@ export const charityTheme = {
     },
     errorWithBg: {
       color: colors.white,
-      backgroundColor: colors.secondaryHover,
-      borderColor: colors.secondaryHover,
+      backgroundColor: colors.primaryHover,
+      borderColor: colors.primaryHover,
       "&:hover": {
         backgroundColor: colors.secondary,
         borderColor: colors.secondary,
@@ -101,9 +101,30 @@ export const charityTheme = {
       backgroundColor: `${colors.transparent}`,
     },
     outlined: {
-      borderWidth: "1px",
+      borderWidth: "2px",
       borderStyle: "solid",
-      backgroundColor: colors.transparent,
+      backgroundColor: "transparent",
+      color: colors.heading,
+      "&:hover": {
+        backgroundColor: colors.primary,
+        color: colors.heading,
+        borderWidth: "2px",
+        borderStyle: "solid",
+        borderColor: colors.primary,
+      },
+    },
+    outlinedLight: {
+      borderWidth: "2px",
+      borderStyle: "solid",
+      backgroundColor: "transparent",
+      color: colors.primary,
+      "&:hover": {
+        backgroundColor: colors.primary,
+        color: colors.heading,
+        borderWidth: "2px",
+        borderStyle: "solid",
+        borderColor: colors.primary,
+      },
     },
     fab: {
       border: "0",
